@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Currículos</h1>
+        <form id="cvForm">
+            <input type="text" placeholder="Seu nome" id="nome" required>
+            <input type="email" placeholder="Seu email" id="email" required>
+            <textarea placeholder="Resumo profissional" id="resumo" required></textarea>
+            <textarea placeholder="Experiências" id="experiencia" required></textarea>
+            <textarea placeholder="Formação" id="formacao" required></textarea>
+            <button type="submit">Gerar PDF</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
